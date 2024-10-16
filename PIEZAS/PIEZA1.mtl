@@ -1,0 +1,42 @@
+# Blender 3.5.1 MTL File: 'None'
+# www.blender.org
+
+newmtl GeneratedMat1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd p1_GeneratedMat1.png
+map_d p1_GeneratedMat1.png
+
+newmtl GeneratedMat1.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd p1_GeneratedMat1.png
+map_d p1_GeneratedMat1.png
+
+newmtl material_1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd p1_material_1.png
+map_d p1_material_1.png
+
+newmtl material_1.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd p1_material_1.png
+map_d p1_material_1.png
