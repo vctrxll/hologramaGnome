@@ -5,13 +5,11 @@ assets/
 __pycache__/
 .idea/
 build/
-**/*.obj
 
 icon.ico
 holograma.spec
 PIEZAS/1.obj
 PIEZAS/2.obj
-
 PIEZAS/3.obj
 PIEZAS/5.obj
 PIEZAS/6.obj
