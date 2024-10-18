@@ -6,7 +6,6 @@ __pycache__/
 .idea/
 build/
 **/*.obj
-**/*.png
 
 icon.ico
 holograma.spec
