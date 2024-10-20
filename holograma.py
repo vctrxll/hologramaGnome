@@ -66,9 +66,6 @@ hand_detection_counter = 0  # Contador para el número de frames sin detección 
 objectreadfile = os.path.join(PIEZAS_PATH, "prueba", "Green_Circle_0915213601.obj")
 
 
-isoptimized = "SI"  # Cadena que indica si la optimización está habilitada.
-makeoptimize = isoptimized == "SI"  # Convierte la cadena en una variable booleana.
-
 
 cap_width = 640
 cap_height = 360
@@ -77,7 +74,6 @@ logo = True  # Bandera para indicar si se está mostrando el logo.
 
 # Cargar el modelo 3D
 mesh = o3d.io.read_triangle_mesh(objectreadfile, True)  # Lee el modelo 3D desde el archivo.
-mesh.compute_vertex_normals()  # Calcula las normales de los vértices del modelo 3D.
 # Crear la ventana de visualización del modelo 3D
 vis = o3d.visualization.Visualizer()  # Crea un visualizador de Open3D.
 vis.create_window(window_name="Open3D", width=1920, height=1080)
@@ -103,10 +99,7 @@ mp_drawing = mp.solutions.drawing_utils  # Inicializa las utilidades de dibujo d
 mp_hands = mp.solutions.hands  # Inicializa el módulo de detección de manos de MediaPipe.
 
 # Cámaras
-if makeoptimize:  # Verifica si se debe optimizar la captura de video.
-    cap = cv2.VideoCapture(0)  # Abre la cámara con optimización (modo DirectShow).
-else:
-    cap = cv2.VideoCapture(0)  # Abre la cámara sin optimización.
+cap = cv2.VideoCapture(0)  # Abre la cámara con optimización (modo DirectShow).
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, cap_width)  # Establece el ancho del cuadro de video en 640 píxeles.
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, cap_height)  # Establece la altura del cuadro de video en 360 píxeles.
 

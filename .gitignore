@@ -1,4 +1,5 @@
 venve/
+venv/
 dist/
 __pycache__
 assets/
