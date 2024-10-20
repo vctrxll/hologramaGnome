@@ -139,7 +139,6 @@ def cambiarObj(vis, modelo_viejo, objectreadfile):
 
 
     meshNew = o3d.io.read_triangle_mesh(objectreadfile, True)
-    meshNew.compute_vertex_normals()
     vis.remove_geometry(modelo_viejo)
     vis.add_geometry(meshNew)
     vis.get_view_control().set_zoom(0.7)
